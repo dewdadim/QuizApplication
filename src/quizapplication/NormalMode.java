@@ -4,7 +4,6 @@
  */
 package quizapplication;
 
-import javax.swing.JLabel;
 
 /**
  *

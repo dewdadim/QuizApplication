@@ -92,7 +92,7 @@ public class AnswerQuizQuestionGUI extends javax.swing.JFrame {
 
         option1.setBackground(new java.awt.Color(153, 255, 255));
         buttonGroup1.add(option1);
-        option1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        option1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         option1.setText("A.");
         option1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         option1.addActionListener(new java.awt.event.ActionListener() {
@@ -103,7 +103,7 @@ public class AnswerQuizQuestionGUI extends javax.swing.JFrame {
 
         option2.setBackground(new java.awt.Color(153, 255, 255));
         buttonGroup1.add(option2);
-        option2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        option2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         option2.setText("B.");
         option2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         option2.addActionListener(new java.awt.event.ActionListener() {
@@ -114,7 +114,7 @@ public class AnswerQuizQuestionGUI extends javax.swing.JFrame {
 
         option3.setBackground(new java.awt.Color(153, 255, 255));
         buttonGroup1.add(option3);
-        option3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        option3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         option3.setText("C.");
         option3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -139,13 +139,13 @@ public class AnswerQuizQuestionGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("option 1");
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setText("option 2");
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel4.setText("option 3");
 
         jLabel5.setBackground(new java.awt.Color(255, 51, 51));
@@ -183,7 +183,7 @@ public class AnswerQuizQuestionGUI extends javax.swing.JFrame {
                                 .addComponent(option3)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel4)))
-                        .addContainerGap(631, Short.MAX_VALUE))))
+                        .addContainerGap(622, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(113, 113, 113)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 564, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -208,11 +208,12 @@ public class AnswerQuizQuestionGUI extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(option3)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton2)
+                        .addComponent(jButton3)))
                 .addGap(49, 49, 49))
         );
 
