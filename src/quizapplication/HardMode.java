@@ -4,21 +4,14 @@
  */
 package quizapplication;
 
-import javax.swing.JLabel;
-import javax.swing.Timer;
-
 /**
  *
  * @author dewda
  */
 public class HardMode extends AnswerQuiz {
     
-    private int timeLeft;
-    private Timer timer;
-    
     public HardMode(){
         super();
-        hardMode = true;
     }
     
     @Override
@@ -31,23 +24,5 @@ public class HardMode extends AnswerQuiz {
                substractMark(); 
             }
         }
-    }
-    
-    public void countdownTimer(int timeLeft, JLabel label){
-        label.setText(String.valueOf(timeLeft));
-        for (int i = timeLeft; i >= 0; i--) {
-            label.setText(String.valueOf(i));
-            try {
-                Thread.sleep(1000); // Wait for 1 second
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        System.out.println("Countdown complete!");
-    }
-
-    public Timer getTimer() {
-        return timer;
-    }
-    
+    } 
 }

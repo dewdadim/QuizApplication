@@ -32,7 +32,7 @@ public class AnswerQuizQuestionGUI extends javax.swing.JFrame {
      */
     public AnswerQuizQuestionGUI() {
         initComponents();
-//        this.setIconImage(new ImageIcon("./src/img/quiz-icon.png").getImage());
+        this.setIconImage(new ImageIcon("./src/img/quiz-icon.png").getImage());
         jLabel1.setText(quiz.getQuizName());
         questionDisplay.setText(question[0].getQuestion());
         jLabel2.setText(question[0].getAnswerOption(0));
@@ -44,7 +44,7 @@ public class AnswerQuizQuestionGUI extends javax.swing.JFrame {
         option2.setActionCommand("1");
         option3.setActionCommand("2");
         
-        if(ansQuiz.isHardMode()){
+        if(ansQuiz instanceof HardMode){
             ansQuizHard = (HardMode)ansQuiz;
         }
     }
@@ -302,7 +302,7 @@ public class AnswerQuizQuestionGUI extends javax.swing.JFrame {
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
-        if(ansQuiz.isHardMode()){
+        if(ansQuiz instanceof HardMode){
             jLabel5.setText("HARD MODE!!");
         }
         else {

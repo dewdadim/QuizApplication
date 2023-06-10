@@ -15,7 +15,6 @@ public abstract class AnswerQuiz implements Serializable{
     protected double totalMark=0;
     protected double result;
     protected int resultInt;
-    protected boolean hardMode;
     
     /**
      *
@@ -55,10 +54,6 @@ public abstract class AnswerQuiz implements Serializable{
 
     public int getResultInt() {
         return resultInt;
-    }
-
-    public boolean isHardMode() {
-        return hardMode;
     }
 
 

@@ -29,16 +29,10 @@ public class CreateQuestionGUI extends javax.swing.JFrame {
     public CreateQuestionGUI() {
         initComponents();
         this.setIconImage(new ImageIcon("./src/img/quiz-icon.png").getImage());
-        question[0] = new Question();
-        question[1] = new Question();
-        question[2] = new Question();
-        question[3] = new Question();
-        question[4] = new Question();
-        question[5] = new Question();
-        question[6] = new Question();
-        question[7] = new Question();
-        question[8] = new Question();
-        question[9] = new Question();
+        
+        for(int i=0; i<10; i++) {
+            question[i] = new Question();
+        }
         
         //increase vertical scroll speed
         jScrollPane1.getVerticalScrollBar().setUnitIncrement(16);

@@ -13,7 +13,6 @@ public class NormalMode extends AnswerQuiz {
     
     public NormalMode(){
         super();
-        hardMode = false;
     }
     
     @Override
